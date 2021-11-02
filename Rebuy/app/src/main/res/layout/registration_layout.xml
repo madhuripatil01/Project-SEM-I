@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:layout_gravity="center"
+            android:id="@+id/txt_registration"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:alpha="0.7"
+                android:background="@drawable/shapedrawable"
+                android:drawableLeft="@drawable/profile"
+                android:drawablePadding="15dp"
+                android:hint="Enter User Name"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="20sp" />
+
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="15dp"
+                    android:hint="Enter Email ID"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:alpha="0.7"
+                    android:background="@drawable/shapedrawable"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:textColorHint="#000"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtmobno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="15dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/shapedrawable"
+                    android:hint="Enter Mobile No"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:textColorHint="#000"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/shapedrawable"
+                    android:drawablePadding="15dp"
+                    android:hint="Enter Password"
+                    android:padding="10dp"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="#000"
+                    android:textSize="20sp" />
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtcompassword"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/shapedrawable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:drawablePadding="15dp"
+                    android:hint="Confirm Password"
+                    android:padding="10dp"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="20sp" />
+
+
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbgroup"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User: "
+                android:id="@+id/txt_user"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="25sp"/>
+
+
+            <RadioButton
+                android:id="@+id/rbnseller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:text="Seller "
+                android:textColor="#350CE9"
+                android:textSize="25sp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buyer "
+                android:id="@+id/rbnbuyer"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:textColor="#350CE9"
+                android:textSize="25sp" />
+
+        </RadioGroup>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnreg"
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:backgroundTint="#40B114"
+            android:src="@drawable/ic_check_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Registered? Log In"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/txtskip"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

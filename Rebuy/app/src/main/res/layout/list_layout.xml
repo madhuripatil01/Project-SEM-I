@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/BuyerHomeproImg"
+            android:layout_width="80dp"
+            android:layout_height="86dp"
+            android:src="@drawable/b_home" />
+
+        <TextView
+            android:id="@+id/txtproname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:layout_marginHorizontal="140dp"/>
+
+        <TextView
+            android:id="@+id/txtproprice"
+            android:layout_width="88dp"
+            android:layout_height="26dp"
+            android:layout_marginHorizontal="140dp"
+            android:layout_marginVertical="40dp"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="10dp"
+            android:text="Price"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

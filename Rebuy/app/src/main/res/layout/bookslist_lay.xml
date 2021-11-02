@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:id="@+id/cardviewbook">
+
+        <ImageView
+            android:id="@+id/img_book"
+            android:layout_width="130dp"
+            android:layout_height="82dp"
+            android:src="@drawable/books" />
+
+        <TextView
+            android:id="@+id/txtbookname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:layout_marginHorizontal="140dp"/>
+
+        <TextView
+            android:id="@+id/txtbookprice"
+            android:layout_width="88dp"
+            android:layout_height="26dp"
+            android:layout_marginHorizontal="140dp"
+            android:layout_marginVertical="40dp"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="10dp"
+            android:text="Price"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

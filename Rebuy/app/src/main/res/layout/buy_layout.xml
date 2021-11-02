@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+
+
+    <ImageView
+        android:id="@+id/imgBuyProdInfo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_add_item" />
+
+
+
+    <TextView
+        android:id="@+id/txtBuyproName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Product Name:-"
+        android:textSize="25sp"
+        android:layout_marginVertical="270dp"/>
+
+    <TextView
+        android:id="@+id/txt_EproName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_marginVertical="270dp"/>
+
+
+    <TextView
+        android:id="@+id/txtBuyProdPrize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Product Prize:-"
+        android:textSize="25sp"
+        android:layout_marginVertical="320dp"/>
+
+    <TextView
+        android:id="@+id/txt_Eproprize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_marginVertical="320dp"/>
+
+    <TextView
+        android:id="@+id/txtBuyProdDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Details:-"
+        android:textSize="25sp"
+        android:layout_marginVertical="360dp"/>
+
+    <TextView
+        android:id="@+id/txtDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_marginVertical="360dp"/>
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="500dp"
+        android:layout_marginLeft="90dp"
+        android:background="#030F68"
+        android:textColor="#ffffff"
+        android:text="BUY"
+        android:textSize="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnInquiries"
+        android:text="Inquire Us"
+        android:layout_toRightOf="@+id/btn_buy"
+        android:layout_marginVertical="500dp"
+        android:layout_marginLeft="50dp"
+
+        android:background="#da160c"
+        android:textColor="#ffffff"
+        ></Button>
+
+</RelativeLayout>
